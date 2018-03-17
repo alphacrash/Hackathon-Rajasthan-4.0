@@ -1,0 +1,25 @@
+Land
+- Owner
+- OwnerID
+- Plot
+- Documents
+- Area
+- Tax
+
+Owner
+- Name
+- Contact
+	- Email
+	- Phone
+- Aadhar ID
+- PAN
+- Transactions
+- Connection to LAND
+- Connection to HEALTH
+
+Health
+- Owner
+- Insurance
+- Services (Hospitals)
+- Transactions
+
