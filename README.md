@@ -6,22 +6,20 @@ Codes - Rajasthan Hackathon 4.0
 
 **To Clone**:
 
-	$ git clone https://github.com/alphacrash/RJHack.git
+	git clone https://github.com/alphacrash/RJHack.git
 
 **Usage**:
 
-	$ git pull
-	$ git add .
-	$ git commit -m "Message"
-	$ git push
+	git pull
+	git add .
+	git commit -m "Message"
+	git push
 
 ## Django
 
-## Setting up your Development Environment ##
-1. Clone this repository.
- 
-    	git clone https://github.com/alphacrash/RJHack.git
+**Setting up your Development Environment**
 
+1. Clone this repository (as shown above).
 
 2. Migrate your database.
 
