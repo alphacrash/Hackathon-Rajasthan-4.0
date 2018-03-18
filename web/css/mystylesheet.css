@@ -1,0 +1,92 @@
+body{
+	background-color: #333;
+	background: url(../media/background.jpeg) no-repeat center center fixed;
+	background-size: cover;
+}
+.navbar{
+	border-bottom: #008ed6 3px solid;
+}
+
+.dark-overlay{
+	background: rgba(0,0,0,0.7);
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 700px;
+}
+
+._header{
+	font-size: 70px;
+	font-family: Algerian Helvetica;
+	color: white;
+	text-align: center;
+	margin: 20px auto 0px auto;
+}
+
+
+.input{
+	border-radius: 20px;
+}
+
+.detail_row{
+	margin: 20px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    overflow: visible; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0); /* Black w/ opacity */
+    margin: 100px auto 0px auto;
+}
+
+.modal-content{
+	border-radius: 20px !important;
+}
+.modal .card{
+	border-radius: 20px !important;
+}
+
+
+
+.modal .input2{
+	border-radius: 0;
+	border: 0px;
+	border-bottom: 1px solid black;
+}
+
+._signup_part{
+	margin: 20px auto 0px auto !important;
+	text-align: center;
+}
+#outer{
+	margin-top: 100px;
+}
+#outer ._home_card{
+	margin: 10px auto 10px auto;
+	padding: 20px;
+	opacity: 0.8;
+}
+
+
+#outer .detail_card,.transaction_card{
+	margin:10px auto 10px auto;
+}
+
+#outer .detail_card{
+	padding: 10px;
+}
+
+#outer .user_pic{
+	height: 130px;
+	width: 130px;
+}
+
+#outer .user_info{
+	margin-top: 30px; 
+}
+
