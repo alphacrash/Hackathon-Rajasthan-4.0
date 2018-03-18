@@ -23,7 +23,7 @@
 				<div class="collapse navbar-collapse" id="navbarmenu">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a href="#" class="nav-link"><i class="fa fa-user-circle"></i>&nbsp Profile</a>
+							<a href="profilepage.html" class="nav-link"><i class="fa fa-user-circle"></i>&nbsp Profile</a>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link">&nbsp Check 1</a>
@@ -33,7 +33,7 @@
 						</li>
 						<li class="dropdown-divider"></li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">&nbsp Logout</a>
+							<a href="login.html" class="nav-link">&nbsp Logout</a>
 						</li>
 					</ul>
 				</div>
@@ -44,54 +44,119 @@
 		<div class="inner">
 			<div class="container">
 				<div class="row">
-					<div class="card detail_card col-8 col-md-5 col-lg-4">
+					<div class="card detail_card col-8 col-md-5 col-lg-4 text-center">
 						<div class="user_pic m-auto">
 							<img src="../media/images.png" class="img-fluid" style="border-radius:50%;margin:10px" alt="propic"/>
 						</div>
 						<div class="user_info">
-							<div clas="row">
-								<div class="col-12 m-auto">
-									Name:
+							<br/>
+							<div><b>Samir Ahmad</b></div>
+							<br/>
+							<div><i class="fa fa-phone"></i> &nbsp 9876543210</div>
+							<br/>
+							<div><i class="fa fa-envelope"></i> &nbsp something@something.com</div>
+							<br/>
+							<div><i class="fa fa-id-card"></i> &nbsp 2222 5555 3333</div>
+							<br/>
+							<div><i class="fa fa-"></i> &nbsp 9a8b7c6d</div>
+							<br/>
+
+						</div>
+					</div>
+					<div class="trans_outer col-12 col-md-6 col-lg-7">
+						<div class="row detail_row">
+							<div class="card col-12" style="padding:0px !important">
+								<div class="card-header">
+									<b><u>View all Transactions</u></b>
+									<button class="drop_btn" onClick="myFunction('list1')" style="float:right">
+										<span><i class="fa fa-sort-down"></i></span>
+									</button>
 								</div>
-								<div class="col-12 m-auto">
-									<input type="text" class="form-control" value="Samir Ahmad">
-								</div>
-							</div>
-							<div clas="row">
-								<div class="col-12 m-auto">
-									Email:
-								</div>
-								<div class="col-12 m-auto">
-									<input type="text" class="form-control" value="someone@something.com">
-								</div>
-							</div>
-							<div clas="row">
-								<div class="col-12 m-auto">
-									Phone:
-								</div>
-								<div class="col-12 m-auto">
-									<input type="text" class="form-control" value="9876543210">
-								</div>
-							</div>
-							<div clas="row">
-								<div class="col-12 m-auto">
-									Aadhar:
-								</div>
-								<div class="col-12 m-auto">
-									<input type="text" class="form-control" value="000000000000">
-								</div>
-							</div>
-							<div clas="row">
-								<div class="col-12 m-auto">
-									Pan:
-								</div>
-								<div class="col-12 m-auto">
-									<input type="text" class="form-control" value="0000000000">
+								<div id="list1" style="display:none">
+									<div class="card-body">
+										<ul class="list-group">
+											<li class="list-group-item"> Transaction No: 1234567890
+												 From: Sudhansu
+												 To: Samir
+												 Amt: $100 
+											</li>
+											<li class="list-group-item"> Transaction No: 1234567891 
+												 From: Sudhansu
+												 To: Ankit
+												 Amt: $125 
+											</li>
+											<li class="list-group-item"> Transaction No: 1234567892
+												 From: Sudhansu
+												 To: Satish
+												 Amt: $150 
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="card transaction_card col-12 col-md-6 col-lg-7">
+						<div class="row detail_row">
+							<div class="card col-12" style="padding:0px !important">
+								<div class="card-header">
+									<b><u>View Land Transactions</u></b>
+									<button class="drop_btn" onClick="myFunction('list2')" style="float:right">
+										<span><i class="fa fa-sort-down"></i></span>
+									</button>
+								</div>
+								<div id="list2" style="display:none">
+									<div class="card-body">
+										<ul class="list-group">
+											<li class="list-group-item"> Transaction No: 1234567890
+												 From: Sudhansu
+												 To: Samir
+												 Amt: $100 
+											</li>
+											<li class="list-group-item"> Transaction No: 1234567891 
+												 From: Sudhansu
+												 To: Ankit
+												 Amt: $125 
+											</li>
+											<li class="list-group-item"> Transaction No: 1234567892
+												 From: Sudhansu
+												 To: Satish
+												 Amt: $150 
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row detail_row">
+							<div class="card col-12" style="padding:0px !important">
+								<div class="card-header">
+									<b><u>View Health Transactions</u></b>
+									<button class="drop_btn" onClick="myFunction('list3')" style="float:right">
+										<span><i class="fa fa-sort-down"></i></span>
+									</button>
+								</div>
+								<div id="list3" style="display:none">
+									<div class="card-body">
+										<ul class="list-group">
+											<li class="list-group-item"> Transaction No: 1234567890
+												 From: Sudhansu
+												 To: Samir
+												 Amt: $100 
+											</li>
+											<li class="list-group-item"> Transaction No: 1234567891 
+												 From: Sudhansu
+												 To: Ankit
+												 Amt: $125 
+											</li>
+											<li class="list-group-item"> Transaction No: 1234567892
+												 From: Sudhansu
+												 To: Satish
+												 Amt: $150 
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 
 				</div>
@@ -103,6 +168,20 @@
 
 
     <!-- Optional JavaScript -->
+    <script type="text/javascript">
+    function myFunction(passed_id)
+    {
+    	var x = document.getElementById(passed_id);
+    	if(x.style.display === "none")
+    	{
+    		x.style.display = "block";
+    	}
+    	else
+    	{
+    		x.style.display = "none";
+    	}
+    }
+    </script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
