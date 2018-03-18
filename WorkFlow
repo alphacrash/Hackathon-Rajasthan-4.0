@@ -23,3 +23,36 @@ Health
 - Services (Hospitals)
 - Transactions
 
+
+SITE:
+
+Homepage - Sign In
+- Health
+	- Profile (Add Contract)
+		- Title
+		- Age
+		- Immunization
+		- Insurance
+		- Allergies
+		- MEDICAL HISTORY
+		- HOSPITAL
+	- Contract Page (Sender's Address, Receiver's Address, Amount)
+	- Successful Page
+- Land
+	- Profile (Add Contract)
+		- Owner ID
+		- PLOT
+			- Documents
+			- Area
+			- Payment
+			- Tax
+	- Contract Page (Sender's Address, Receiver's Address, Amount)
+	- Successful Page
+- Profile
+	- Transaction History
+
+Government Page:
+- Land
+	- Transactions
+- Health
+	- Transactions
