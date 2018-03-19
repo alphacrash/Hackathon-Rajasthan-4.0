@@ -6,7 +6,7 @@ from healthcare.models import Data
 
 
 class Profile(LoginRequiredMixin, ListView):
-    template_name = 'profile.html'
+    template_name = 'health/profile.html'
 
     def get_queryset(self):
         return Data.objects.filter(owner=self.request.user)

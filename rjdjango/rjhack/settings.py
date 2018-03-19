@@ -39,9 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Custom App
-    'land',
-    'healthcare',
     'flow',
+    'healthcare',
+    'land',
+    'transactions',
 ]
 
 MIDDLEWARE = [
