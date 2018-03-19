@@ -3,8 +3,7 @@ from django.db import models
 
 User = settings.AUTH_USER_MODEL
 
-
-class Record(models.Model):
+class Data(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=120)
     age = models.IntegerField()
