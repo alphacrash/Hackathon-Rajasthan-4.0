@@ -9,4 +9,4 @@ class Profile(LoginRequiredMixin, ListView):
     template_name = 'profile.html'
 
     def get_queryset(self):
-        return Record.objects.filter(owner=self.request.user)
+        return Data.objects.filter(owner=self.request.user)

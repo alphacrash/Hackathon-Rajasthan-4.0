@@ -40,8 +40,8 @@ INSTALLED_APPS = [
 
     # Custom App
     'land',
-
     'healthcare',
+    'flow',
 ]
 
 MIDDLEWARE = [
