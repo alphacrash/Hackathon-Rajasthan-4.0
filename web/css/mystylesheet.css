@@ -94,7 +94,15 @@ body{
 }
 
 .trans_card{
-	padding: 0px !important;
+	max-width: 350px;
+	margin: 10px auto 0px auto;
+}
+
+.trans_text{
+	width: 200px;
+	background: white;
+	border-radius: 20px;
+	padding: 5px;
 }
 
 .card-header{
@@ -112,5 +120,38 @@ body{
 	margin: 20px auto 0px auto;
 }
 
+._trans_photo{
+	max-height: 180px;
+	max-width: 180px;
+	border-radius: 50%;
+}
 
+._trans_container{
+	margin: 30px auto 10px auto;
+	text-align: center;
+}
+
+.amt_bg{
+	background: #fff;
+	border-radius: 20px;
+	padding: 5px;
+	max-height: 40px;
+	margin: auto auto 10px auto !important;
+}
+.info_btn{
+	border-radius: 50%;
+	background: none;
+	border: 1px solid black
+
+}
+
+.amt_card{
+	border-radius: 50%;
+	width: 180px;
+	height: 180px;
+	margin: auto;
+	color: black;
+	text-align: center;
+	padding-top: 30px;
+}
 

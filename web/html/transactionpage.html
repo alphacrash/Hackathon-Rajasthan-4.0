@@ -43,7 +43,48 @@
 	<header id="outer" >
 		<div class="inner">
 			<div class="container">
-				
+				<div class="card amt_card">
+					<div class="card-body display-4"><b><i>$35</i></b></div>
+				</div>
+				<div class="row detail_row col-9" style="max-width:350px;">
+					<div class="input-group">
+						<span class="input-group-addon"><b>FROM</b></span>
+						<span class="trans_text"> &nbsp Sudhansu</span> &nbsp
+						<button class="info_btn" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-info"></i></button>
+					</div>
+				</div>
+				<div class="row detail_row col-9" style="max-width:350px;">
+					<div class="input-group">
+						<span class="input-group-addon"><b>&nbsp &nbsp TO &nbsp</b></span>
+						<span class="trans_text"> &nbsp Samir</span> &nbsp
+						<button class="info_btn" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-info"></i></button>
+					</div>
+				</div>
+
+				<div class="row detail_row">
+					<button class="btn btn-warning m-auto" style="border-radius:50%"><span class="display-4"><i class="fa fa-check"></i></span></button>
+				</div>
+				<div id="id01" class="modal">
+					<form class="modal-content animate" action="" method="POST">
+					<div class="form card container pro_card">
+						<br>
+						<div class="card-body">
+							<div class="user_pic m-auto">
+								<img src="../media/images.png" class="img-fluid" style="border-radius:50%;" alt="propic"/>
+							</div>
+							<div class="user_info">
+								<b
+								<div><b>Name here</b></div>
+								<br/>
+								<div><i class="fa fa-phone"></i> &nbsp Number here</div>
+								<br/>
+							<button type="button" onclick="document.getElementById('id01').style.display='none'" class="form-control btn btn-warning input">	Done
+							</button>
+							<br>
+						</div>
+					</div>
+					</form>
+				</div>	
 			</div>
 		</div>
 	</header>
@@ -52,6 +93,20 @@
 
 
     <!-- Optional JavaScript -->
+    <script type="text/javascript">
+    function myFunction(passed_id)
+    {
+    	var x = document.getElementById(passed_id);
+    	if(x.style.display === "none")
+    	{
+    		x.style.display = "block";
+    	}
+    	else
+    	{
+    		x.style.display = "none";
+    	}
+    }
+    </script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
