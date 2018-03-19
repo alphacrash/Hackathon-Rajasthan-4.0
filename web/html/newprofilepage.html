@@ -23,7 +23,7 @@
 				<div class="collapse navbar-collapse" id="navbarmenu">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a href="#" class="nav-link"><i class="fa fa-user-circle"></i>&nbsp Profile</a>
+							<a href="newprofilepage.html" class="nav-link"><i class="fa fa-user-circle"></i>&nbsp Profile</a>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link">&nbsp Check 1</a>
@@ -33,7 +33,7 @@
 						</li>
 						<li class="dropdown-divider"></li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">&nbsp Logout</a>
+							<a href="login.html" class="nav-link">&nbsp Logout</a>
 						</li>
 					</ul>
 				</div>
@@ -106,26 +106,95 @@
 				</div>
 
 				<div class="row detail_row">
-					<div class="card col-12">
+					<div class="card col-12" style="padding:0px !important">
 						<div class="card-header">
 							<b><u>View all Transactions</u></b>
-							<span style="float:right"><i class="fa fa-sort-down"></i></span>
+							<button class="drop_btn" onClick="myFunction('list1')" style="float:right">
+								<span><i class="fa fa-sort-down"></i></span>
+							</button>
+						</div>
+						<div id="list1" style="display:none">
+							<div class="card-body">
+								<ul class="list-group">
+									<li class="list-group-item"> Transaction No: 1234567890
+										 From: Sudhansu
+										 To: Samir
+										 Amt: $100 
+									</li>
+									<li class="list-group-item"> Transaction No: 1234567891 
+										 From: Sudhansu
+										 To: Ankit
+										 Amt: $125 
+									</li>
+									<li class="list-group-item"> Transaction No: 1234567892
+										 From: Sudhansu
+										 To: Satish
+										 Amt: $150 
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row detail_row">
-					<div class="card col-12">
+					<div class="card col-12" style="padding:0px !important">
 						<div class="card-header">
 							<b><u>View Land Transactions</u></b>
-							<span style="float:right"><i class="fa fa-sort-down"></i></span>
+							<button class="drop_btn" onClick="myFunction('list2')" style="float:right">
+								<span><i class="fa fa-sort-down"></i></span>
+							</button>
+						</div>
+						<div id="list2" style="display:none">
+							<div class="card-body">
+								<ul class="list-group">
+									<li class="list-group-item"> Transaction No: 1234567890
+										 From: Sudhansu
+										 To: Samir
+										 Amt: $100 
+									</li>
+									<li class="list-group-item"> Transaction No: 1234567891 
+										 From: Sudhansu
+										 To: Ankit
+										 Amt: $125 
+									</li>
+									<li class="list-group-item"> Transaction No: 1234567892
+										 From: Sudhansu
+										 To: Satish
+										 Amt: $150 
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row detail_row">
-					<div class="card col-12">
+					<div class="card col-12" style="padding:0px !important">
 						<div class="card-header">
 							<b><u>View Health Transactions</u></b>
-							<span style="float:right"><i class="fa fa-sort-down"></i></span>
+							<button class="drop_btn" onClick="myFunction('list3')" style="float:right">
+								<span><i class="fa fa-sort-down"></i></span>
+							</button>
+						</div>
+						<div id="list3" style="display:none">
+							<div class="card-body">
+								<ul class="list-group">
+									<li class="list-group-item"> Transaction No: 1234567890
+										 From: Sudhansu
+										 To: Samir
+										 Amt: $100 
+									</li>
+									<li class="list-group-item"> Transaction No: 1234567891 
+										 From: Sudhansu
+										 To: Ankit
+										 Amt: $125 
+									</li>
+									<li class="list-group-item"> Transaction No: 1234567892
+										 From: Sudhansu
+										 To: Satish
+										 Amt: $150 
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -137,6 +206,20 @@
 
 
     <!-- Optional JavaScript -->
+    <script type="text/javascript">
+    function myFunction(passed_id)
+    {
+    	var x = document.getElementById(passed_id);
+    	if(x.style.display === "none")
+    	{
+    		x.style.display = "block";
+    	}
+    	else
+    	{
+    		x.style.display = "none";
+    	}
+    }
+    </script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 

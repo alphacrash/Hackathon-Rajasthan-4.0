@@ -32,7 +32,7 @@ body{
 }
 
 .detail_row{
-	margin: 20px;
+	margin: 20px auto 10px auto;
 }
 
 .modal {
@@ -73,12 +73,15 @@ body{
 }
 
 
-#outer .detail_card,.transaction_card{
+#outer .detail_card,.trans_outer{
 	margin:10px auto 10px auto;
 }
 
 #outer .detail_card{
 	padding: 10px;
+	max-height: 480px;
+	max-width: 330px;
+	border-radius: 30px;
 }
 
 #outer .user_pic{
@@ -87,6 +90,24 @@ body{
 }
 
 #outer .user_info{
-	margin-top: 30px; 
+	margin-top: 60px; 
 }
+
+.trans_card{
+	padding: 0px !important;
+}
+
+.card-header{
+	margin: 0px !important;
+}
+
+.drop_btn{
+	background: none;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
 
