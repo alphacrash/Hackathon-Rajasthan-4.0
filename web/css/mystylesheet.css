@@ -20,11 +20,9 @@ body{
 }
 
 ._header{
-	font-size: 70px;
-	font-family: Algerian Helvetica;
 	color: white;
 	text-align: center;
-	margin: 20px auto 0px auto;
+	margin: 80px auto 0px auto;
 }
 
 
@@ -37,6 +35,7 @@ body{
 }
 
 .modal {
+	width: 300px;
     display: none; /* Hidden by default */
     position: absolute; /* Stay in place */
     z-index: 1; /* Sit on top */
