@@ -1,3 +1,4 @@
+
 body{
 	background-color: #333;
 	background: url(../media/background.jpeg) no-repeat center center fixed;
@@ -108,6 +109,9 @@ body{
 	margin: 0px;
 }
 
+.congo_card{
+	margin: 20px auto 0px auto;
+}
 
 
 
