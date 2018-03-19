@@ -18,9 +18,10 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic.base import TemplateView
+from flow.views import home
 
 urlpatterns = [
-    path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('', home, name='home'),
     path('admin/', admin.site.urls),
     path('health/', include('healthcare.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
