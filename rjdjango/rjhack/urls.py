@@ -16,8 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from land.views import Profile
+from health.views import HProfile
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('profile/', Profile),
+    path('profile/', HProfile.as_view()),
 ]

@@ -1,5 +1,12 @@
 {% for obj in object_list %}
 
-{{ obj.plot }}
+{{ obj.title }}<br />
+
+Age: {{ obj.age }} <br />
+Medical History : {{ obj.medical_history }}<br />
+Immunization: {{ obj.immunization }}<br />
+Allergies: {{ obj.allergies }}<br />
+Hospital: {{ obj.hospital }}<br />
+Insured: {{ obj.insured }}<br />
 
 {% endfor %}

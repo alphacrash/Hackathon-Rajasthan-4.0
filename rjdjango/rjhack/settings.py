@@ -38,12 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-<<<<<<< HEAD
     #Custom App
     'health',
-=======
     'land',
->>>>>>> 0636277bcec1540e7ca53f92c7ca34897cf4a24b
 ]
 
 MIDDLEWARE = [
