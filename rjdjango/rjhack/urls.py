@@ -22,6 +22,7 @@ from flow.views import home
 
 urlpatterns = [
     path('', home, name='home'),
+    path('accounts/', include('accounts.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('admin/', admin.site.urls),
     path('health/', include('healthcare.urls'), name='health'),

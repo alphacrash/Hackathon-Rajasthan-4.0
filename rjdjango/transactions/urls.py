@@ -1,6 +1,7 @@
 from django.urls import path
-from transactions.views import List
+from transactions import views
 
 urlpatterns = [
-    path('', List.as_view()),
+    path('', views.List.as_view()),
+    path('all/', views.Profile.as_view()),
 ]

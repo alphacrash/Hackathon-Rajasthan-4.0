@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Custom App
+    'accounts',
     'flow',
     'healthcare',
     'land',
