@@ -155,3 +155,8 @@ body{
 	padding-top: 30px;
 }
 
+.btn_cross{
+	float: right;
+	background: none;
+	padding: 0px !important;
+}

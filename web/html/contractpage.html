@@ -3,8 +3,8 @@
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<title>Profile</title>
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <!-- Custom CSS -->
@@ -40,86 +40,73 @@
 			</div>
 		</div>
 	</div>
-	<div id="outer" >
+	<header id="outer" >
 		<div class="inner">
 			<div class="container">
-				<div class="row _detail_row col-12">
-					<div class="card _home_card col-7 col-md-5 col-lg-4 text-center">
-						<br/>
-						<h1 class="display-1" ><i class="fa fa-home"></i></h1>
-						<div>
-							<b><i>
-								Land Services
-							</i></b>
-						</div>
-						<br/>
-						<div>
-							<a href="#" class="btn btn-outline-primary input">
-								Avail Services
-							</a>
-						</div>
-						<br/>
-					</div>
-					<div class="card _home_card col-7 col-md-5 col-lg-4 text-center">
-						<br/>
-						<h1 class="display-1" style="color:red"><i class="fa fa-heartbeat"></i></h1>
-						<div>
-							<b><i>
-								Health Services
-							</i></b>
-						</div>
-						<br/>
-						<div>
-							<a href="#" class="btn btn-outline-primary input">
-								Avail Services
-							</a>
-						</div>
-						<br/>
+				<div class="card amt_card">
+					<div class="card-body display-4"><b><i>$35</i></b></div>
+				</div>
+				<div class="row detail_row col-9" style="max-width:350px;">
+					<div class="input-group">
+						<span class="input-group-addon"><b>FROM</b></span>
+						<span class="trans_text"> &nbsp Sudhansu</span> &nbsp
+						<button class="info_btn" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-info"></i></button>
 					</div>
 				</div>
-				<div class="row _detail_row col-12">
-					<div class="card _home_card col-7 col-md-5 col-lg-4 text-center">
-						<br/>
-						<img src="../media/emitra_icon.png" class="img-fluid" style="max-height:150px;max-width:150px;margin:auto"/>
-						<div>
-							<b><i>
-								Land Services
-							</i></b>
-						</div>
-						<br/>
-						<div>
-							<a href="#" class="btn btn-outline-primary input">
-								Avail Services
-							</a>
-						</div>
-						<br/>
-					</div>
-					<div class="card _home_card col-7 col-md-5 col-lg-4 text-center">
-						<br/>
-						<h1 class="display-1" style="color:red"><i class="fa fa-plus"></i></h1>
-						<div>
-							<b><i>
-								Extra Services
-							</i></b>
-						</div>
-						<br/>
-						<div>
-							<a href="#" class="btn btn-outline-primary input">
-								Avail Services
-							</a>
-						</div>
-						<br/>
+				<div class="row detail_row col-9" style="max-width:350px;">
+					<div class="input-group">
+						<span class="input-group-addon"><b>&nbsp &nbsp TO &nbsp</b></span>
+						<span class="trans_text"> &nbsp Samir</span> &nbsp
+						<button class="info_btn" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-info"></i></button>
 					</div>
 				</div>
 
+				<div class="row detail_row">
+					<button class="btn btn-warning m-auto" style="border-radius:50%"><span class="display-4"><i class="fa fa-check"></i></span></button>
+				</div>
+				<div id="id01" class="modal">
+					<form class="modal-content animate" action="" method="POST">
+					<div class="form card container pro_card">
+						<br>
+						<div class="card-body">
+							<div class="user_pic m-auto">
+								<img src="../media/images.png" class="img-fluid" style="border-radius:50%;" alt="propic"/>
+							</div>
+							<div class="user_info">
+								<b
+								<div><b>Name here</b></div>
+								<br/>
+								<div><i class="fa fa-phone"></i> &nbsp Number here</div>
+								<br/>
+							<button type="button" onclick="document.getElementById('id01').style.display='none'" class="form-control btn btn-warning input">	Done
+							</button>
+							<br>
+						</div>
+					</div>
+					</form>
+				</div>	
 			</div>
 		</div>
-	</div>
+	</header>
 </div>
 
 
 
     <!-- Optional JavaScript -->
+    <script type="text/javascript">
+    function myFunction(passed_id)
+    {
+    	var x = document.getElementById(passed_id);
+    	if(x.style.display === "none")
+    	{
+    		x.style.display = "block";
+    	}
+    	else
+    	{
+    		x.style.display = "none";
+    	}
+    }
+    </script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 

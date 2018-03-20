@@ -43,48 +43,94 @@
 	<header id="outer" >
 		<div class="inner">
 			<div class="container">
-				<div class="card amt_card">
-					<div class="card-body display-4"><b><i>$35</i></b></div>
-				</div>
-				<div class="row detail_row col-9" style="max-width:350px;">
-					<div class="input-group">
-						<span class="input-group-addon"><b>FROM</b></span>
-						<span class="trans_text"> &nbsp Sudhansu</span> &nbsp
-						<button class="info_btn" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-info"></i></button>
+				<div class="card">
+					<div class="card-body">
+						<div class="table-responsive">
+							<table  class="table table-bordered table-hover table-responsive">
+					            <thead class="table-head">
+					                <th>TRANSACTION NO:</th>
+					                <th>AMOUNT</th>
+					                <th>DETAILS</th>
+					                <th>STATUS</th>
+					            </thead>
+					            <tbody>
+					                <tr>
+						                <td>9876543210</td>
+						                <td>$500</td>
+						                <td>
+						                	<button class="col-12 btn btn-primary">View</i></button>
+						                </td>
+						                <td>
+						                    <form action="" method="POST">
+						                    	<div class="btn-group btn-block" style="border-radius:10px;">
+								                    <button class="col-12 btn btn-success"><i class="fa fa-check"></i></button>
+								                    <button class="col-12 btn btn-danger"><i class="fa fa-close"></i></button>
+								                </div>
+						                    </form>
+						                </td>
+						            </tr>
+						            <tr>
+						                <td>9876543210</td>
+						                <td>$100</td>
+						                <td>
+						                	<button class="col-12 btn btn-primary">View</i></button>
+						                </td>
+						                <td>
+						                    <form action="" method="POST">
+						                    	<div class="btn-group btn-block" style="border-radius:10px;">
+								                    <button class="col-12 btn btn-success"><i class="fa fa-check"></i></button>
+								                    <button class="col-12 btn btn-danger"><i class="fa fa-close"></i></button>
+								                </div>
+						                    </form>
+						                </td>
+						            </tr>
+						            <tr>
+						                <td>9876543210</td>
+						                <td>$500</td>
+						                <td>
+						                	<button onclick="document.getElementById('id01').style.display='block'" class="col-12 btn btn-primary">View</i></button>
+						                </td>
+						                <td>
+						                    <form action="" method="POST">
+						                    	<div class="btn-group btn-block" style="border-radius:10px;">
+								                    <button class="col-12 btn btn-success"><i class="fa fa-check"></i></button>
+								                    <button class="col-12 btn btn-danger"><i class="fa fa-close"></i></button>
+								                </div>
+						                    </form>
+						                </td>
+						            </tr>
+					            </tbody>
+					        </table>
+					    </div>
 					</div>
 				</div>
-				<div class="row detail_row col-9" style="max-width:350px;">
-					<div class="input-group">
-						<span class="input-group-addon"><b>&nbsp &nbsp TO &nbsp</b></span>
-						<span class="trans_text"> &nbsp Samir</span> &nbsp
-						<button class="info_btn" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-info"></i></button>
-					</div>
-				</div>
-
-				<div class="row detail_row">
-					<button class="btn btn-warning m-auto" style="border-radius:50%"><span class="display-4"><i class="fa fa-check"></i></span></button>
-				</div>
-				<div id="id01" class="modal">
-					<form class="modal-content animate" action="" method="POST">
-					<div class="form card container pro_card">
-						<br>
-						<div class="card-body">
-							<div class="user_pic m-auto">
-								<img src="../media/images.png" class="img-fluid" style="border-radius:50%;" alt="propic"/>
-							</div>
-							<div class="user_info">
-								<b
-								<div><b>Name here</b></div>
-								<br/>
-								<div><i class="fa fa-phone"></i> &nbsp Number here</div>
-								<br/>
-							<button type="button" onclick="document.getElementById('id01').style.display='none'" class="form-control btn btn-warning input">	Done
+			</div>
+			<div id="id01" class="modal">
+				<div class="modal-content animate">
+					<div class="card container">
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn_cross">
+								<i class="fa fa-close"></i>
 							</button>
-							<br>
-						</div>
+						<div class="card-body">
+							<ul class="list-group">
+							<li class="list-group-item">
+								<b>Transaction no:</b> <u>9876543210</u>
+							</li>
+							<li class="list-group-item">
+							<b>FROM:</b> <u>Sudhansu</u>
+							</li>
+							<li class="list-group-item">
+							<b>TO:</b> <u>Samir</u>
+							</li>
+							<li class="list-group-item">
+							<b>AMOUNT:</b> <u>$500</u>
+							</li>
+							<li class="list-group-item">
+							<b>DATE:</b> <u>20/03/2018</u>
+							</li> 
+						<div>
 					</div>
-					</form>
-				</div>	
+				</div>
 			</div>
 		</div>
 	</header>
