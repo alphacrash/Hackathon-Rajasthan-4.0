@@ -7,7 +7,7 @@ from transactions.models import Transaction
 from transactions.forms import TransactionForm
 
 
-class List(LoginRequiredMixin, ListView):
+class List(ListView):
     template_name = 'transactions.html'
 
     def get_queryset(self):

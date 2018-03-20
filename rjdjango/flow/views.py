@@ -8,5 +8,10 @@ def home(request):
     else:
         return HttpResponseRedirect('/accounts/login/')
 
+
 def index(request):
     return render(request, "index.html", context=None)
+
+
+def profile(request):
+    return render(request, "profilepage.html", context=None)

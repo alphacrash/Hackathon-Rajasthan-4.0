@@ -1,8 +1,43 @@
-{% for obj in object_list %}
+{% extends "base.html" %} 
+{% load static %} 
+{% block content %}
 
-{{ obj.title }}<br />
-{{ obj.sender }}<br />
-{{ obj.receiver }}<br />
-{{ obj.amount }}<br />
+<header id="outer">
+	<div class="inner">
+		<div class="container">
+			<div class="card">
+				<div class="card-body">
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover table-responsive">
+							<thead class="table-head">
+								<th>TRANSACTION NO:</th>
+								<th>TYPE</th>
+								<th>SENDER</th>
+								<th>RECEIVER</th>
+								<th>AMOUNT</th>
+								<th>STATUS</th>
+							</thead>
+							<tbody>
+								{% for transaction in object_list %}
+								<tr>
+									<td>{{ transaction.transID }}</td>
+									<td><b>{{ transaction.transType }}</b></td>
+									<td>{{ transaction.sender }}</td>
+									<td>{{ transaction.receiver }}</td>
+									<td><b>{{ transaction.amount }}</b></td>
+									<td>
+										<button class="col-12 btn btn-success">
+											<i class="fa fa-check"></i>
+										</button>
+									</td>
+								</tr>
+								{% endfor %}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+</header>
 
-{% endfor %}
+{% endblock content %}
