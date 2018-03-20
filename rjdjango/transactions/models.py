@@ -7,6 +7,7 @@ User = settings.AUTH_USER_MODEL
 class Transaction(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=120)
+    date = models.DateTimeField(auto_now_add=True)
     transType = models.CharField(max_length=120)
     sender = models.CharField(max_length=120)
     receiver = models.CharField(max_length=120)

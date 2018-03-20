@@ -7,7 +7,7 @@
         <div class="container">
             <div class="card col-9" style="max-width:350px;margin:auto">
                 <div class="card-body">
-                    <form method="POST" class="form">{% csrf_token %}
+                    <form method="POST" class="form" action="/successful/">{% csrf_token %}
                         <br/>
                         <div class="input-group">
                             <select class="form-control" type="list" name="transType">

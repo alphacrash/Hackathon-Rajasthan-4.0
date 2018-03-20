@@ -2,89 +2,51 @@
 {% load static %} 
 {% block content %}
 
-<header id="outer" >
+<header id="outer">
 	<div class="inner">
 		<div class="container">
 			<div class="row">
-				<div class="d-none d-md-block col-8 col-md-5 col-lg-4">
-					<div class="card detail_card  text-center">
-						<div class="user_pic m-auto">
-							<img src="{% static "media/images.png" %}" class="img-fluid" style="border-radius:50%;margin:10px" alt="propic"/>
-						</div>
-						<div class="user_info">
-							<br/>
-							<div><b>Samir Ahmad</b></div>
-							<br/>
-							<div><i class="fa fa-phone"></i> &nbsp 9876543210</div>
-							<br/>
-							<div><i class="fa fa-envelope"></i> &nbsp something@something.com</div>
-							<br/>
-							<div><i class="fa fa-id-card"></i> &nbsp 2222 5555 3333</div>
-							<br/>
-							<div><i class="fa fa-"></i> &nbsp 9a8b7c6d</div>
-							<br/>
-
-						</div>
-					</div>
-				</div>
-				<div class="trans_outer col-12 col-md-6 col-lg-7">
-					<div class="d-block d-md-none">
-						<div class="row detail_row">
-							<div class="col-12 text-center" style="padding:0px !important">
-									<button class="drop_btn" onClick="myFunction('list0')" style="color:white;font-size:60px">
-										<span><i class="fa fa-user-circle"></i></span>
-									</button>
-								<div id="list0" style="display:none">
-									<div class="card detail_card col-8 col-md-5 col-lg-4 text-center">
-										<div class="user_pic m-auto">
-											<img src="{% static "media/images.png" %}" class="img-fluid" style="border-radius:50%;margin:10px" alt="propic"/>
-										</div>
-										<div class="user_info">
-											<br/>
-											<div><b>Samir Ahmad</b></div>
-											<br/>
-											<div><i class="fa fa-phone"></i> &nbsp 9876543210</div>
-											<br/>
-											<div><i class="fa fa-envelope"></i> &nbsp something@something.com</div>
-											<br/>
-											<div><i class="fa fa-id-card"></i> &nbsp 2222 5555 3333</div>
-											<br/>
-											<div><i class="fa fa-"></i> &nbsp 9a8b7c6d</div>
-											<br/>
-
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="trans_outer">
 					<div class="row detail_row">
 						<div class="card col-12" style="padding:0px !important">
 							<div class="card-header">
-								<b><u>View Health Transactions</u></b>
-								<button class="drop_btn" onClick="myFunction('list2')" style="float:right">
-									<span><i class="fa fa-sort-down"></i></span>
-								</button>
+								<b>
+									<u>Health Transactions</u>
+								</b>
 							</div>
-							<div id="list2" style="display:none">
+							<div id="list2">
 								<div class="card-body">
-									<ul class="list-group">
-										{% for transaction in transactions %}
-										<li class="list-group-item"> 
-											Title: <b>{{ transaction.title }}</b>
-											Transaction No: <b>{{ transaction.transID }}</b>
-											From: <b>{{ transaction.sender }}</b>
-											To: <b>{{ transaction.receiver}}</b>
-											Amt: <b>${{ transaction.amount }} </b>
-										</li>
-										{% endfor %}
-									</ul>
+									<table class="table table-bordered table-hover table-responsive">
+										<thead class="table-head">
+											<th>DATE</th>
+											<th>TITLE</th>
+											<th>TRANSACTION ID</th>
+											<th>FROM</th>
+											<th>TO</th>
+											<th>AMOUNT</th>
+										</thead>
+										<tbody>
+											{% for transaction in transactions %}
+											<tr>
+												<td>{{ transaction.date }}</td>
+												<td>{{ transaction.title }}</td>
+												<td>
+													<b>{{ transaction.transID }}</b>
+												</td>
+												<td>{{ transaction.sender }}</td>
+												<td>{{ transaction.receiver }}</td>
+												<td>
+													<b>{{ transaction.amount }}</b>
+												</td>
+											</tr>
+											{% endfor %}
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>

@@ -15,3 +15,7 @@ def index(request):
 
 def profile(request):
     return render(request, "profilepage.html", context=None)
+
+
+def successful(request):
+    return render(request, "successful.html", context=None)
