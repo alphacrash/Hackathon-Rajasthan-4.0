@@ -1,6 +1,37 @@
-  <h2>Sign up</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Sign up</button>
-  </form>
+{% extends "base.html" %} 
+{% load static %} 
+{% block content %}
+
+<div id="outer">
+	<div class="inner">
+		<div class="container">
+			<div class="card col-9" style="max-width:350px;margin:auto">
+				<div class="card-body">
+					<form method="POST" class="form">{% csrf_token %}
+						<br/>
+						<div class="input-group">
+							<input class="form-control input2" name="username" type="text" placeholder="Username">
+						</div>
+						<br/>
+						<div class="input-group">
+							<input class="form-control input2" name="password1" type="password" placeholder="Password">
+						</div>
+						<br>
+						<div class="input-group">
+							<input class="form-control input2" name="password2" type="password" placeholder="Confirm password">
+						</div>
+						<br>
+						<div class="input-group">
+							<button class="btn btn-block btn-primary" type="submit">
+								Signup
+							</button>
+						</div>
+						<br>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock content %}
