@@ -1,8 +1,10 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.shortcuts import render
+from django.http import HttpResponseRedirect
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView
 
 from transactions.models import Transaction
+from transactions.forms import TransactionForm
 
 
 class List(LoginRequiredMixin, ListView):
@@ -24,8 +26,17 @@ class Profile(LoginRequiredMixin, ListView):
     def get_queryset(self):
         return Transaction.objects.filter(owner=self.request.user)
 
+
 def order(request):
+    if not request.user.is_authenticated:
+        return HttpResponseRedirect('/')
+    form = TransactionForm(request.POST or None)
+    if form.is_valid():
+        instance = form.save(commit=False)
+        instance.owner = request.user
+        instance.save()
+        return HttpResponseRedirect('/')
     context = {
-        
+        'form': form,
     }
     return render(request, "order.html", context)

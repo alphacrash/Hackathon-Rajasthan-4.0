@@ -7,33 +7,36 @@
         <div class="container">
             <div class="card col-9" style="max-width:350px;margin:auto">
                 <div class="card-body">
-                    <form method="" class="form" action="POST">
+                    <form method="POST" class="form">{% csrf_token %}
                         <br/>
                         <div class="input-group">
-                            <select class="form-control" type="list">
+                            <select class="form-control" type="list" name="transType">
                                 <option>Select service</option>
-                                <option>Land Service</option>
-                                <option>Health Service</option>
-                                <option>E-mitra Service</option>
-
+                                <option>Land</option>
+                                <option>Health</option>
+                                <option>EMitra</option>
                             </select>
                         </div>
                         <br/>
                         <div class="input-group">
-                            <input class="form-control input2" type="text" placeholder="Sender">
+                            <input class="form-control input2" type="text" name="title" placeholder="Sender">
+                        </div>
+                        <br />
+                        <div class="input-group">
+                            <input class="form-control input2" type="text" name="sender" placeholder="Sender">
                         </div>
                         <br/>
                         <div class="input-group">
-                            <input class="form-control input2" type="text" placeholder="Reciever">
+                            <input class="form-control input2" type="text" name="receiver" placeholder="Reciever">
                         </div>
                         <br>
                         <div class="input-group">
                             <span class="input-group-addon">$ </span>
-                            <input class="form-control input2" type="text" placeholder="Amount">
+                            <input class="form-control input2" type="text" name="amount" placeholder="Amount">
                         </div>
                         <br>
                         <div class="input-group">
-                            <button class="btn btn-block btn-warning">
+                            <button class="btn btn-block btn-warning" type="submit">
                                 Proceed
                             </button>
                         </div>
