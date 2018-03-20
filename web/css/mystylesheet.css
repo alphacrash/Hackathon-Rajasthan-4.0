@@ -35,7 +35,7 @@ body{
 }
 
 .modal {
-	width: 300px;
+	width: 350px;
     display: none; /* Hidden by default */
     position: absolute; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -159,4 +159,6 @@ body{
 	float: right;
 	background: none;
 	padding: 0px !important;
+	border:0px;
+	width: 10px;
 }
