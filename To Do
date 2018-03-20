@@ -1,0 +1,6 @@
+# Sign Up Page
+    - name="username"
+    - password="password1"
+    - password="password2"
+    
+# Profile Page

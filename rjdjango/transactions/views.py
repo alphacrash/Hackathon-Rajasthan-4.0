@@ -23,3 +23,9 @@ class Profile(LoginRequiredMixin, ListView):
 
     def get_queryset(self):
         return Transaction.objects.filter(owner=self.request.user)
+
+def order(request):
+    context = {
+        
+    }
+    return render(request, "order.html", context)
