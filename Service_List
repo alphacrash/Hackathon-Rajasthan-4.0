@@ -1,5 +1,42 @@
 CHOICES = [
     'APPLICATION FOR RENEWAL OF DEALERS LICENSE FOR SEED',
     'Amendment in Seed License',
+    'Application for Sale Permission',
+    'Incentive to Girls',
+    'ASK A DOC Email Consultation',
+    'ASK A DOC Phone Consultation',
+    'BTER-Engineering Enrolment Form Fees',
+    'BTER- Examination',
+    'RTI Fee Deposition for Dissemination of Information',
+    'New Ration Card Form Filling (Form 1)',
+    'Ration Card Other State Transfer ',
+    'Labour Issue Identity Cards',
+    'Labour Payment for Registration Beneficiary Registration',
+    'Application for Silicosis Disease Assistance',
+    'Mines and Geology Various fee deposition',
+    'Business loan(For Minority)',
+    'Education loan(For Minority)',
+    'Rural Dev and Panchayati Raj - TGT Recruitment',
+    'Sanskrit - Student Online Fee Payment',
+    'Sanskrit Admission Form Filling',
+    'Commercial Application for Approval of a Project of Tourism Unit',
+    'ECONOMIC HELP TO STUDENTS OF TRIBAL OF SCHEDULED AREA FOR PMT IIT COACHING',
+    'ECONOMIC HELP TO TRIBAL GIRLS FOR EDUCATION COLLEGE LEVEL',
+    'RENT REIMBURSEMENT FOR COLLEGE TRIBAL STUDENTS',
+    'DES - Business Register form Filling',
+    'DES -Print Death-Birth-Marriage Certificate',
+    'DES- Application for Young Interns Program-2017',
+    'Application For subsidy Solar Pump Set',
+    'Subsidy on Bee Keeping',
+    'Subsidy on Mechanization',
+    'DTE - ITI Examination form fee',
+    'DTE - ITI Examination form fee',
     
+
+
+
+
+
+
+
 ]
