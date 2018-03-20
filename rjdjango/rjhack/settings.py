@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # Custom App
     'accounts',
+    'emitra',
     'flow',
     'healthcare',
     'land',

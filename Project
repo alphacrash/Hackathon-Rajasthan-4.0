@@ -1,0 +1,39 @@
+Problem:
+
+Inconvenience is caused to citizens who has to visit government offices and register for various services and buy different stamps, notarize papers, etc.
+As verification, processing and transaction takes time, it causes delay to citizens who has to visit government offices each and every time for each step
+of process, especially for people who are in emergency.
+This process also causes:
+- Huge Paperwork
+- Extra verification 
+- Constant footfalls in offices
+- Time Consuming
+- Money/Resources exhausting
+- Corruption
+
+Solution:
+
+We are creating a blockchain ID for the user that can be merged with the SSOID already given to E-Mitra users. In here, every transaction is recorded and completed very fast
+compared to traditional way. 
+
+Where we are implementing it:
+- Land
+- Health
+- E-Mitra normal service payments
+- Income Tax
+ 
+- Smart Contract: It ensures fulfillment of transaction, after steps are completed without any extra hassle
+- Corruption - Any transfer will take place directly between the citizens and the government without any third party.
+- Verification: Blockchain ensures you are the owner of that ID and can buy with that - such as using biometrics and constant bank account
+- Time Reduced: People don't have to constantly visit offices
+- Less Paperwork
+- People can view their properties online and access their whole records which helps them such as:
+    - They can pay tax from anywhere in the world such as a person who buys a land in Jaipur but transferred to different place can pay online
+- Secure: Blockchain ensures transaction is secure as multiple nodes check the integrity
+- Immutable - Nobody can change the records
+- Accessible - Records can be accessed whole by private key and just shallow information to the public key.
+
+
+Software Used:
+
+We are using Django for the backend. Blockchain transactions are mantained by Ethereum using smart contracts.

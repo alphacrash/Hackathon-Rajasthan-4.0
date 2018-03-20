@@ -1,14 +1,24 @@
+{% load static %} 
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    
-    <title>{% block title %}Django Auth Tutorial{% endblock %}</title>
+    <title></title>
+    {% include 'snippets/css.html' %}
 </head>
+
 <body>
-   <main>
-       {% block content %}
-       {% endblock %}
-   </main> 
+    <div class="container-fluid dark-overlay">
+
+            {% include 'snippets/nav.html' %}
+
+            {% block content %} {% endblock content %}
+
+    </div>
+    
+    {% include 'snippets/optJs.html' %}
+    {% include 'snippets/js.html' %}
 </body>
+
 </html>
