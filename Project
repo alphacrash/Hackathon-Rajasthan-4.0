@@ -37,3 +37,7 @@ Where we are implementing it:
 Software Used:
 
 We are using Django for the backend. Blockchain transactions are mantained by Ethereum using smart contracts.
+
+Why it it awesome?
+
+A blockchain with smart contract for the users to directly interact with the government specified rules without any involvement of third party. Added in Land, Health, E-Mitra services. Less time & resources is consumed while being secure and immutable.
